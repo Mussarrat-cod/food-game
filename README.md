@@ -1,4 +1,4 @@
- 🧋💣fun and addctiv Choose your favorite drink and see if you can fill your cup without hitting any bombs.![Game Preview](https://img.shields.io/badge/Game-Boba%20or%20Bomb-brightgreen) ![React](https://img.shields.io/badge/React-18.2.0-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue) ![Vite](https://img.shields.io/badge/Vite-5.0.8-orange)
+ 💣fun and addctive. ![React](https://img.shields.io/badge/React-18.2.0-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue) ![Vite](https://img.shields.io/badge/Vite-5.0.8-orange)
 
  🚀Quick art
 
@@ -13,7 +13,7 @@ gitclone https://github.com/Mussarrat-cod/food-game.git
 cd food-game
 ```
 
-2. 34517#Build for Production
+2. #Build for Production
 
 ```bash
 npm run build
@@ -25,10 +25,10 @@ npm run build
 npm run preview
 ```
 
-## 🎮 ✨ **D**:Wseamlessly  devices**R**:S and performance **Multiple Control Schemes**:** Feedback**: Watch your **Adaptive Layout**:** Support**: Crisp graphics on retinas
-- **Multiple Drink Choices**: Taro, Milk Tea, and Matcha options
+## 
 -**Progresive Difficlty**: Game seeds u as yu pogress🛠️ Sck**Fronend**:with 
--**Buil Tool**: 5.0.8 **GameEngin**: Cutomas engine
+-**Buil Tool**: 5.0.8 
+- **GameEngin**: Cutomas engine
 - **Styling**: CSS with responsive design
 - **Linting**: ESLint with TypeScript rules
 
@@ -88,12 +88,6 @@ src/
 
 ### 🍴 Available Food Items
 
-**Drinks & Beverages:**
-- 🧋 **Boba** - Classic tapioca pearls
-- 🥛 **Milk Tea** - Creamy milk tea
-- 🍵 **Matcha** - Japanese green tea
-- 🥤 **Milkshake** - Thick and creamy milkshake
-- 🍹 **Taro** - Purple taro drink
 
 **Food Items:**
 - 🍗 **Chicken** - Grilled chicken pieces
@@ -110,7 +104,6 @@ src/
 ##🎨 Assets
 
 The  includes various visual assets:
-- Boba ears nd bombsiffrent drnk types (Taro, Milk Tea, Matha)
 - UI lementsand backgrounds
 - High-resolution grahcs for rtina dispays
 
@@ -138,14 +131,15 @@ The  includes various visual assets:
 
 1. Fork the reository
 2. Create a feature branch(`it checkout -b featue/amazing-feture`)
-3. Commit your canges (`gt ommit -m 'Add ome amazing feature'`)4. Push to the branch (`git push origin feature/amazingfeature`)
+3. Commit your canges (`gt ommit -m 'Add ome amazing feature'`)
+4. Push to the branch (`git push origin feature/amazingfeature`)
 5. Open a Pull Request
 
 ## 📝 Development
 
 ###Avalabl Scripts
 
-- `npm run ev` - Startevelopment servr
+- `npm run dev` - Startevelopment servr
 - `npm run build` - Buid for producion
 - `npm run preview` - Previewproducion buld
 - `np run lint` - Run ESLint
@@ -165,7 +159,7 @@ Tis project is licened under the MIT Lense - see the [LICENSE](LICENSE) file for
 
 You can play the game live at:[https://mussarrt-od.github.io/food-game/](https://mussarat-cod.github.io/food-game/)
 
-## 🙏 Acknwledgment
+## 🙏Acknwledgment
 
 - Built with modern web technologie
 -Inspire by classic catch-the-falling-objects games
