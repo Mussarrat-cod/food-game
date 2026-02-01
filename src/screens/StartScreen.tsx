@@ -18,19 +18,19 @@ export function StartScreen() {
     {
       type: "shawarma",
       name: "Shawarma",
-      image: "/assets/shawarma.png",
+      image: "./assets/shawarma.png",
       difficulty: "Easy",
     },
     {
       type: "milkshake",
       name: "Milkshake",
-      image: "/assets/milkshake.png",
+      image: "./assets/milkshake.png",
       difficulty: "Medium",
     },
     {
       type: "laptop",
       name: "Laptop",
-      image: "/assets/laptop.png",
+      image: "./assets/laptop.png",
       difficulty: "Hard",
     },
   ];
