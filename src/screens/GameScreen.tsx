@@ -92,12 +92,27 @@ export function GameScreen() {
 
   return (
     <div className="game-screen">
-      <div className="game-hud">
-        <div className="lives-display">
+      <div className="game-hud" style={{
+        position: "absolute",
+        top: "20px",
+        left: "20px",
+        zIndex: 10,
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+        fontSize: "18px",
+        fontWeight: "bold",
+        color: "#333",
+        backgroundColor: "rgba(255, 255, 255, 0.8)",
+        padding: "15px",
+        borderRadius: "10px",
+        boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+      }}>
+        <div className="lives-display" style={{ display: "flex", alignItems: "center" }}>
           {Array.from({ length: 3 }, (_, i) => (
             <img
               key={i}
-              src="/assets/pixelheart.png"
+              src="/pixelheart.png"
               alt="Life"
               className={`life-heart ${
                 i < state.lives ? "active" : "inactive"
@@ -115,7 +130,8 @@ export function GameScreen() {
         <div className="item-count">
           Items: {state.itemCount}/{state.targetItemCount}
         </div>
-        <div className={`miss-percentage ${missPercentage >= 40 ? 'warning' : ''}`}>
+        <div className={`miss-percentage ${missPercentage >= 40 ? 'warning' : ''}`}
+             style={{ color: missPercentage >= 40 ? "#ff4444" : "#333" }}>
           Missed: {missPercentage}%
         </div>
       </div>
