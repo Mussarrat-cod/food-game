@@ -26,7 +26,7 @@ export function StartScreen() {
   return (
     <div className="start-screen">
       <div className="start-content">
-        <h1 className="game-title">Food Catcher</h1>
+        <h1 className="game-title">Catch Your Bite</h1>
         <p className="game-subtitle">Choose your food to start</p>
 
         <div className="food-selection">
