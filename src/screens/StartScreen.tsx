@@ -1,5 +1,8 @@
 import { useGame } from "../context/GameContext";
 import { FoodType } from "../types";
+import shawarma from "../assets/shawarma.png";
+import milkshake from "../assets/milkshake.png";
+import laptop from "../assets/laptop.png";
 
 export function StartScreen() {
   const { selectFood, startGame } = useGame();
@@ -9,30 +12,15 @@ export function StartScreen() {
     startGame();
   };
 
-  const foods: {
+  const items: {
     type: FoodType;
     name: string;
     image: string;
     difficulty: string;
   }[] = [
-    {
-      type: "shawarma",
-      name: "Shawarma",
-      image: "./assets/shawarma.png",
-      difficulty: "Easy",
-    },
-    {
-      type: "milkshake",
-      name: "Milkshake",
-      image: "./assets/milkshake.png",
-      difficulty: "Medium",
-    },
-    {
-      type: "laptop",
-      name: "Laptop",
-      image: "./assets/laptop.png",
-      difficulty: "Hard",
-    },
+    { type: "shawarma", name: "Shawarma", image: shawarma, difficulty: "Easy" },
+    { type: "milkshake", name: "Milkshake", image: milkshake, difficulty: "Medium" },
+    { type: "laptop", name: "Laptop", image: laptop, difficulty: "Hard" },
   ];
 
   return (
@@ -42,7 +30,7 @@ export function StartScreen() {
         <p className="game-subtitle">Choose your food to start</p>
 
         <div className="food-selection">
-          {foods.map((food) => (
+          {items.map((food) => (
             <div key={food.type} className="food-option">
               <button
                 className="food-button"
