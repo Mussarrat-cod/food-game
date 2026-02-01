@@ -37,27 +37,27 @@ export class AssetManager {
     > = [
       [
         "items:chicken",
-        "./assets/chicken.png",
+        "/chicken.png",
         (img: HTMLImageElement) => (this.itemImages["chicken"] = img),
       ],
       [
         "items:ice",
-        "./assets/ice.png",
+        "/ice.png",
         (img: HTMLImageElement) => (this.itemImages["ice"] = img),
       ],
       [
         "items:battery",
-        "./assets/battery.png",
+        "/battery.png",
         (img: HTMLImageElement) => (this.itemImages["battery"] = img),
       ],
       [
         "items:bomb",
-        "./assets/bomb.png",
+        "/bomb.png",
         (img: HTMLImageElement) => (this.itemImages["bomb"] = img),
       ],
       [
         "items:heart",
-        "./assets/pixelheart.png",
+        "/pixelheart.png",
         (img: HTMLImageElement) => (this.itemImages["heart"] = img),
       ],
     ];
@@ -66,7 +66,7 @@ export class AssetManager {
     for (let i = 1; i <= 10; i++) {
       criticalAssets.push([
         `overlays:${i}`,
-        `./assets/${i}.PNG`,
+        `/${i}.PNG`,
         (img: HTMLImageElement) => (this.overlayImages[i - 1] = img),
       ]);
     }
@@ -77,7 +77,7 @@ export class AssetManager {
     for (const i of groupIndices) {
       criticalAssets.push([
         `groups:${i}`,
-        `./assets/Group ${i}.png`,
+        `/Group ${i}.png`,
         (img: HTMLImageElement) => {
           this.groupImages[i - 1] = img;
         },
@@ -97,17 +97,17 @@ export class AssetManager {
     > = [
       [
         "foods:shawarma",
-        "./assets/shawarma.png",
+        "/shawarma.png",
         (img: HTMLImageElement) => (this.foodImages["shawarma"] = img),
       ],
       [
         "foods:milkshake",
-        "./assets/milkshake.png",
+        "/milkshake.png",
         (img: HTMLImageElement) => (this.foodImages["milkshake"] = img),
       ],
       [
         "foods:laptop",
-        "./assets/laptop.png",
+        "/laptop.png",
         (img: HTMLImageElement) => (this.foodImages["laptop"] = img),
       ],
     ];
@@ -121,7 +121,7 @@ export class AssetManager {
     );
 
     // Load item image for cup fill (background loading)
-    this.loadImage("item", "./assets/pixelheart.png").then((img) => {
+    this.loadImage("item", "/pixelheart.png").then((img) => {
       this.itemImage = img;
     });
   }

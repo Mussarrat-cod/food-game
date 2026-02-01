@@ -1,8 +1,8 @@
 import { useGame } from "../context/GameContext";
 import { FoodType } from "../types";
-import shawarma from "../assets/shawarma.png";
-import milkshake from "../assets/milkshake.png";
-import laptop from "../assets/laptop.png";
+import shawarma from "/shawarma.png";
+import milkshake from "/milkshake.png";
+import laptop from "/laptop.png";
 
 export function StartScreen() {
   const { selectFood, startGame } = useGame();
